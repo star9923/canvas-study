@@ -1,0 +1,23 @@
+.circleContainer {
+  text-align: center;
+
+  .actionContainer {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 25px;
+    margin: 12px 0;
+
+    span {
+      color: $blue;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+
+  canvas {
+    border: 1px solid #333;
+  }
+}

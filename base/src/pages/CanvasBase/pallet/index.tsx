@@ -61,9 +61,9 @@ const Pallet = () => {
     <div className={styles.palletContainer}>
       <Helmet title="调色板" />
       <div className={styles.actionContainer}>
-        <span onClick={clear}>清空画布</span>
         <span onClick={drawRectPallet}>方格调色板</span>
         <span onClick={drawGradualPallet}>渐变调色版</span>
+        <span onClick={clear}>清空画布</span>
       </div>
       <canvas ref={canvasRef} className={styles.canvas}>
         改浏览器不支持canvas{' '}
