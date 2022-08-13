@@ -21,7 +21,8 @@ const routes: RoutesTy[] = [
   { path: '/canvas/polygon', element: React.lazy(() => import('@/pages/CanvasBase/polygon')), title: '多边形' },
   { path: '/canvas/pallet', element: React.lazy(() => import('@/pages/CanvasBase/pallet')), title: '调色板' },
   { path: '/canvas/circle', element: React.lazy(() => import('@/pages/CanvasBase/circle')), title: '圆形' },
-  { path: '/canvas/arc', element: React.lazy(() => import('@/pages/CanvasBase/arc')), title: '弧线' }
+  { path: '/canvas/arc', element: React.lazy(() => import('@/pages/CanvasBase/arc')), title: '弧线' },
+  { path: '/canvas/lineAction', element: React.lazy(() => import('@/pages/CanvasBase/lineAction')), title: '线条操作' }
 ];
 const RouteConfig = () => {
   return (

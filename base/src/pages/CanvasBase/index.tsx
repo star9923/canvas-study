@@ -15,7 +15,8 @@ const linkObj: linkTy[] = [
   { path: '/canvas/polygon', key: 'polygon', message: '多边形' },
   { path: '/canvas/pallet', key: 'pallet', message: '调色板' },
   { path: '/canvas/circle', key: 'circle', message: '圆形' },
-  { path: '/canvas/arc', key: 'arc', message: '弧线' }
+  { path: '/canvas/arc', key: 'arc', message: '弧线' },
+  { path: '/canvas/lineAction', key: 'line', message: '线条操作' }
 ];
 
 const Canvas = () => {

@@ -57,6 +57,7 @@ const Circle = () => {
   }, []);
   return (
     <div className={styles.circleContainer}>
+      <Helmet title="圆形" />
       <div className={styles.actionContainer}>
         <span onClick={drawStrokeCircle}>描边圆</span>
         <span onClick={drawFillCircle}>填充圆</span>
