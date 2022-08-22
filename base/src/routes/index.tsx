@@ -23,7 +23,12 @@ const routes: RoutesTy[] = [
   { path: '/canvas/circle', element: React.lazy(() => import('@/pages/CanvasBase/circle')), title: '圆形' },
   { path: '/canvas/arc', element: React.lazy(() => import('@/pages/CanvasBase/arc')), title: '弧线' },
   { path: '/canvas/lineAction', element: React.lazy(() => import('@/pages/CanvasBase/lineAction')), title: '线条操作' },
-  { path: '/canvas/textAction', element: React.lazy(() => import('@/pages/CanvasBase/textAction')), title: '文本操作' }
+  { path: '/canvas/textAction', element: React.lazy(() => import('@/pages/CanvasBase/textAction')), title: '文本操作' },
+  {
+    path: '/canvas/imageAction',
+    element: React.lazy(() => import('@/pages/CanvasBase/imageAction')),
+    title: '图片操作'
+  }
 ];
 const RouteConfig = () => {
   return (
