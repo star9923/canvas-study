@@ -28,6 +28,11 @@ const routes: RoutesTy[] = [
     path: '/canvas/imageAction',
     element: React.lazy(() => import('@/pages/CanvasBase/imageAction')),
     title: '图片操作'
+  },
+  {
+    path: '/canvas/imageTransform',
+    element: React.lazy(() => import('@/pages/CanvasBase/imageTransform')),
+    title: '图片位移'
   }
 ];
 const RouteConfig = () => {

@@ -79,6 +79,22 @@ const ImageAction = () => {
     }
   };
 
+  const combAction = () => {
+    clear();
+    const ctx = canvasRef?.current?.getContext('2d');
+    if (ctx) {
+      const image = new Image();
+      image.src = head;
+      image.onload = () => {
+        const text = 'TEXT';
+        ctx.font = 'bold 220px 微软雅黑';
+        const pattern = ctx?.createPattern(image, 'repeat') as CanvasPattern;
+        ctx.fillStyle = pattern;
+        ctx.fillText(text, 10, 500);
+      };
+    }
+  };
+
   useEffect(() => {
     if (canvasRef?.current) {
       initCanvas(canvasRef?.current);
@@ -91,6 +107,7 @@ const ImageAction = () => {
         <span onClick={drawImage}>绘制图片</span>
         <span onClick={createPattern}>平铺图片</span>
         <span onClick={clip}>切割图片</span>
+        <span onClick={combAction}>图片文字结合</span>
         <span onClick={clear}>清空画布</span>
       </div>
       <canvas ref={canvasRef} className={styles.canvas}>
